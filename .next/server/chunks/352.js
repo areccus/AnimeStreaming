@@ -69,6 +69,9 @@ const Header = ()=>{
     };
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("header", {
         className: "sticky top-0 z-[51] flex h-12 w-full items-center bg-gray-900 shadow-md",
+        style: {
+            background: "transparent"
+        },
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                 href: "/",

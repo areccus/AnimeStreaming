@@ -34,7 +34,8 @@ const Card = ({ anime  })=>{
                 className: "aspect-w-7 aspect-h-9 relative w-40 sm:w-52",
                 style: {
                     position: "relative",
-                    textShadow: "1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000"
+                    textShadow: "1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000",
+                    height: "60vh"
                 },
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {

@@ -13,8 +13,8 @@ const Card: React.FC<CardProps> = ({ anime }) => {
 
   return (
     <Link href={`/anime/${anime.id}`} passHref>
-      <a className="w-46 transform p-2 transition duration-300 ease-out hover:scale-105 sm:w-56" style={{ margin: '0' }}>
-        <div className="aspect-w-7 aspect-h-9 relative w-40 sm:w-52" style={{ position: 'relative', textShadow: '1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000' }}>
+      <a className="w-46 transform p-2 transition duration-300 ease-out hover:scale-105 sm:w-56" style={{ margin: '0', }}>
+        <div className="aspect-w-7 aspect-h-9 relative w-40 sm:w-52" style={{ position: 'relative', textShadow: '1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000', height: '60vh' }}>
           <Image
             alt="Cover Image"
             src={anime.coverImage.large || anime.coverImage.medium}
