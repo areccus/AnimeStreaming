@@ -1,0 +1,13 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/anime/[id]": "pages/anime/[id].js",
+  "/api/anime": "pages/api/anime.js",
+  "/api/video/proxy": "pages/api/video/proxy.js",
+  "/genre/[genre]": "pages/genre/[genre].js",
+  "/": "pages/index.js",
+  "/search": "pages/search.js",
+  "/watch/[id]": "pages/watch/[id].js",
+  "/404": "pages/404.html"
+}

@@ -1,0 +1,65 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-5cd94c89d3acac5f.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/Zb79Nj897YHtwM5grN-II/_buildManifest.js",
+    "static/Zb79Nj897YHtwM5grN-II/_ssgManifest.js",
+    "static/Zb79Nj897YHtwM5grN-II/_middlewareManifest.js"
+  ],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-9642992c9508b5f4.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-784e916df6ec1917.js",
+      "static/chunks/232-c53ef771f0aa89d7.js",
+      "static/chunks/449-6caaa32b692ba17a.js",
+      "static/chunks/pages/index-c789b70c19f207ed.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-9642992c9508b5f4.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-784e916df6ec1917.js",
+      "static/css/0e6f8a65144b1a8d.css",
+      "static/chunks/pages/_app-29d7ab8f454f0257.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-9642992c9508b5f4.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-784e916df6ec1917.js",
+      "static/chunks/pages/_error-0a004b8b8498208d.js"
+    ],
+    "/anime/[id]": [
+      "static/chunks/webpack-9642992c9508b5f4.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-784e916df6ec1917.js",
+      "static/chunks/232-c53ef771f0aa89d7.js",
+      "static/chunks/pages/anime/[id]-f6daa0ee96370a7e.js"
+    ],
+    "/genre/[genre]": [
+      "static/chunks/webpack-9642992c9508b5f4.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-784e916df6ec1917.js",
+      "static/chunks/232-c53ef771f0aa89d7.js",
+      "static/chunks/pages/genre/[genre]-4f15cc4c32377068.js"
+    ],
+    "/search": [
+      "static/chunks/webpack-9642992c9508b5f4.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-784e916df6ec1917.js",
+      "static/chunks/232-c53ef771f0aa89d7.js",
+      "static/chunks/pages/search-577eebb7aca8b801.js"
+    ],
+    "/watch/[id]": [
+      "static/chunks/webpack-9642992c9508b5f4.js",
+      "static/chunks/framework-5f4595e5518b5600.js",
+      "static/chunks/main-784e916df6ec1917.js",
+      "static/chunks/232-c53ef771f0aa89d7.js",
+      "static/chunks/7-3e5b7a839421c25f.js",
+      "static/chunks/pages/watch/[id]-558fe74145bcc1f2.js"
+    ]
+  },
+  "ampFirstPages": []
+}
