@@ -2,6 +2,7 @@ import '@styles/globals.css';
 import { AppProps } from 'next/app';
 import Router from 'next/router';
 
+import Card from '@components/watch/Card';
 import { DefaultSeo } from 'next-seo';
 import { Provider } from 'react-redux';
 

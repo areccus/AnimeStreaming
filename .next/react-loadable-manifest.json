@@ -1,17 +1,1 @@
-{
-  "../../node_modules/@stencil/core/internal/client/index.js -> ./shadow-css.js": {
-    "id": 576,
-    "files": [
-      "static/chunks/576.9b33af4e5ad7cf42.js"
-    ]
-  },
-  "watch/[id].tsx -> @components/watch/VideoPlayer": {
-    "id": 8321,
-    "files": [
-      "static/chunks/316b940b.696b7b2cd6fcdcc9.js",
-      "static/chunks/910.2292056ea0213d6c.js",
-      "static/css/9f680910a053c2f1.css",
-      "static/chunks/447.ec6cdf1facdd6c6d.js"
-    ]
-  }
-}
+{}

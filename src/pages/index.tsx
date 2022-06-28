@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 
 import { InferGetServerSidePropsType } from 'next';
-
 import Banner from '@components/anime/Banner';
 import Section from '@components/anime/Section';
 import Header from '@components/Header';
@@ -15,7 +14,6 @@ export const getServerSideProps = async () => {
     page: 1,
     seasonYear: new Date().getFullYear(),
   });
-
   return {
     props: {
       ...data,
@@ -48,12 +46,13 @@ const Index = ({
       ids,
     }).then((data) => setRecentlyWatched(data.Page.media));
   }, []);
-
+  console.log(banner)
   return (
     <>
       <Header />
-
+      <div className="banner" style={{ display: 'flex', justifyContent: 'center' }}>
       <Banner anime={banner} />
+      </div>
 
       <Section title="Trending" animeList={trending.media} />
 

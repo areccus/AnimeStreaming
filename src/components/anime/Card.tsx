@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import styles from '../../styles/Home.module.css'
 import { AnimeInfoFragment } from '@generated/aniList';
 import { base64SolidImage } from '@utility/image';
 
@@ -13,7 +14,7 @@ const Card: React.FC<CardProps> = ({ anime }) => {
 
   return (
     <Link href={`/anime/${anime.id}`} passHref>
-      <a className="w-46 transform p-2 transition duration-300 ease-out hover:scale-105 sm:w-56" style={{ margin: '0', }}>
+      <a className="w-46 transform p-2 transition duration-300 ease-out hover:scale-105 sm:w-56 anime-link" style={{ margin: '0' }}>
         <div className="aspect-w-7 aspect-h-9 relative w-40 sm:w-52" style={{ position: 'relative', textShadow: '1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000', height: '60vh' }}>
           <Image
             alt="Cover Image"
