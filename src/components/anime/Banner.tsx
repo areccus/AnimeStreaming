@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import styles from '../../styles/Home.module.css'
+
 import { PlayIcon } from '@heroicons/react/solid';
 
 import Genre from '@components/Genre';
@@ -23,27 +25,17 @@ const Banner: React.FC<BannerProps> = ({ anime }) => {
   }, [anime.bannerImage]);
 
   return (
-    <div className="relative h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[450px]" style={{ width: '90vw', height: '50vh', border: '3px solid #d5dbdb', borderRadius: '2px' }}>
-      <div className='banner-inner-div'>
+    <div className={styles.bannerContainer}>
+      <div className={styles.innerDiv}>
       {/* The image behind the banner */}
-      {anime.bannerImage && (
-        <Image
-          priority
-          src={anime.bannerImage}
-          alt={`Banner for ${anime.title.english || anime.title.romaji}`}
-          layout="fill"
-          objectFit="cover"
-          className="opacity-60"
-          onLoadingComplete={progressBar.finish}
-        />
-      )}
+      <img src={anime.bannerImage} alt="" className={styles.banner_image}/>
 
       {/* The container that lies on top of the image */}
-      <div className="absolute ml-4 mt-4 space-y-2 text-white sm:ml-8 sm:mt-6 md:space-y-3 lg:mt-8 xl:mt-10 2xl:mt-12">
+      <div className={styles.textContainer}>
         {/* the title */}
-        <p className="text-xl font-extrabold line-clamp-1 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl" style={{ marginTop: '8%' }}>
+        <h2 className={styles.anititle}>
           {anime.title.romaji || anime.title.english}
-        </p>
+        </h2>
 
         {/* Array of the genres */}
         <div className="mr-2 flex flex-wrap gap-x-2 gap-y-1 sm:gap-x-3 md:gap-x-4">
@@ -52,7 +44,7 @@ const Banner: React.FC<BannerProps> = ({ anime }) => {
           ))}
         </div>
 
-        <p className="hidden max-w-3xl md:block md:line-clamp-2 lg:line-clamp-3 xl:line-clamp-4 2xl:line-clamp-5">
+        <p className={"hidden max-w-3xl md:block md:line-clamp-2 lg:line-clamp-3 xl:line-clamp-4 2xl:line-clamp-5"} style={{ fontSize: '1.1vw', margin: '2% 0',overflowWrap: 'break-word' }}>
           {stripHtml(anime.description)}
         </p>
 

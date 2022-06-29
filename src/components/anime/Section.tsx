@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 
 import AnimeCard from '@components/anime/Card';
 import { AnimeInfoFragment } from '@generated/aniList';
+import styles from '../../styles/Home.module.css'
 
 export interface SectionProps {
   title: string;
@@ -13,7 +14,7 @@ const Section: React.FC<SectionProps> = ({ title, animeList }) => {
 
   return (
     <div>
-      <p className="mt-4 ml-3 text-base font-semibold text-white sm:ml-6 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl" style={{ fontSize: '1.6vw' }}>
+      <p className={styles.category}>
         {title}
       </p>
 
