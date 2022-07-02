@@ -6,6 +6,10 @@ div.aspect7 {
     width: 15vw
 }
 
+.cardIMG {
+    border-radius: 3px;
+}
+
 p.category {
     font-size: 1.6vw;
     color: white;
@@ -13,16 +17,18 @@ p.category {
 }
 
 div.bannerContainer {
-    width: 95vw;
-    height: 50vh;
-    border: 3px solid #d5dbdb;
-    border-radius: 2px;
+    width: 90vw;
+    height: 40vh;
+    border: 2px solid white;
+    margin-top: 1%;
+    border-radius: 4px;
     position: relative;
 }
 
 .banner_image {
     width: 100%;
-    height: 49vh;
+    height: 39.5vh;
+    border-radius: 2px;
     opacity: 60%;
 }
 
@@ -38,6 +44,17 @@ div.textContainer {
 .textContainer h2{
     font-size: 3vw;
     margin-bottom: 1%;
+}
+
+.cardTitle {
+    position: absolute;
+    bottom: 20px;
+    left: 12px;
+    overflow-wrap: normal;
+}
+
+.cardTitle p {
+    font-size: 1.3vw;
 }
 
 @media (max-width: 480px) {
@@ -57,7 +74,25 @@ div.textContainer {
         margin-top: 5%;
     }
 
+    div.textContainer {
+        position: absolute;
+        bottom: 20px;
+        left: 16px;
+        color: white;
+        font-size: 0.8vw;
+        margin: 0 0 2% 1%;
+    }
+
     .banner_image {
         height: 24.2vh
+    }
+
+    .cardTitle {
+        bottom: 5px;
+        left: 9px;
+    }
+
+    .cardTitle p {
+        font-size: 2.7vw;
     }
 }

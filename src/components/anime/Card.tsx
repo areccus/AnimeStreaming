@@ -22,15 +22,14 @@ const Card: React.FC<CardProps> = ({ anime }) => {
             layout="fill"
             objectFit="cover"
             objectPosition="center"
-            className="rounded-md"
+            className={styles.cardIMG}
             placeholder="blur"
-            style={{ borderRadius: '0' }}
             blurDataURL={`data:image/svg+xml;base64,${base64SolidImage(
               anime.coverImage.color
             )}`}
           />
-          <div className='cardTitle' style={{ position: 'absolute', fontSize: '1.2vw', display: 'flex' }}>
-          <p className="mt-2 h-9 text-sm font-bold text-white line-clamp-2" style={{ alignSelf: 'flex-end', marginLeft: '2%', marginBottom: '1%' }}>
+          <div className={styles.cardTitle}>
+          <p className="mt-2 h-9 text-sm font-bold text-white line-clamp-2">
           {title}
           </p>
           </div>
