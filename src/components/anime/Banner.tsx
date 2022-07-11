@@ -25,13 +25,13 @@ const Banner: React.FC<BannerProps> = ({ anime }) => {
   }, [anime.bannerImage]);
 
   return (
-    <div className={styles.bannerContainer}>
+    <div className={router.route === '/' ? `${styles.bannerContainer}` : `${styles.aniBanner}`}>
       <div className={styles.innerDiv}>
       {/* The image behind the banner */}
       <img src={anime.bannerImage} alt="" className={styles.banner_image}/>
 
       {/* The container that lies on top of the image */}
-      <div className={styles.textContainer}>
+      <div className={router.route === '/' ? `${styles.textContainer}` : `${styles.aniText}`}> 
         {/* the title */}
         <h2 className={styles.anititle}>
           {anime.title.romaji || anime.title.english}
@@ -44,7 +44,7 @@ const Banner: React.FC<BannerProps> = ({ anime }) => {
           ))}
         </div>
 
-        <p className={"hidden max-w-3xl md:block md:line-clamp-2 lg:line-clamp-3 xl:line-clamp-4 2xl:line-clamp-5"} style={{ fontSize: '1.1vw', margin: '2% 0',overflowWrap: 'break-word' }}>
+        <p className={styles.aniDesc}>
           {stripHtml(anime.description)}
         </p>
 

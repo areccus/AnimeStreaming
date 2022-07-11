@@ -3,11 +3,12 @@ div.aspect7 {
     position: relative; 
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     height: 50vh;
-    width: 15vw
+    width: 15vw;
 }
 
 .cardIMG {
     border-radius: 3px;
+    opacity: 85%;
 }
 
 p.category {
@@ -23,6 +24,13 @@ div.bannerContainer {
     margin-top: 1%;
     border-radius: 4px;
     position: relative;
+}
+
+.aniBanner {
+    border-radius: 4px;
+    position: relative;
+    height: 60vh;
+    border: 2px solid white;
 }
 
 .banner_image {
@@ -41,6 +49,25 @@ div.textContainer {
     margin: 0 0 2% 1%;
 }
 
+.textContainer h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aniText {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2%;
+}
+
+.aniText h2 {
+    margin-bottom: 0.5%;
+    font-size: 1.5vw;
+}
+
+.genres {
+    opacity: 50%;
+}
+
 .textContainer h2{
     font-size: 3vw;
     margin-bottom: 1%;
@@ -57,10 +84,22 @@ div.textContainer {
     font-size: 1.3vw;
 }
 
+.aniLink {
+    transition: all .2s ease-in-out;
+    margin: 0;
+    width: 14.5vw;
+}
+
+.aniLink:hover {
+    transform: scale(1.03);
+}
+
+
 @media (max-width: 480px) {
     div.aspect7 {
         height: 30vh;
         width: 30vw;
+        
     }
 
     p.category {
@@ -69,8 +108,8 @@ div.textContainer {
     }
 
     div.bannerContainer {
-        width: 85vw;
-        height: 25vh;
+        width: 90vw;
+        height: 30vh;
         margin-top: 5%;
     }
 
@@ -84,7 +123,7 @@ div.textContainer {
     }
 
     .banner_image {
-        height: 24.2vh
+        height: 29.5vh
     }
 
     .cardTitle {
@@ -94,5 +133,18 @@ div.textContainer {
 
     .cardTitle p {
         font-size: 2.7vw;
+    }
+
+    .aniLink {
+        margin: 0;
+        width: 28.5vw;
+    }
+
+    .aniText h2 {
+        font-size: 3.5vw;
+    }
+
+    .genres {
+        font-size: 2vw;
     }
 }

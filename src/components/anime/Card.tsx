@@ -4,6 +4,7 @@ import Link from 'next/link';
 import styles from '../../styles/Home.module.css'
 import { AnimeInfoFragment } from '@generated/aniList';
 import { base64SolidImage } from '@utility/image';
+import { useRouter } from 'next/router';
 
 export interface CardProps {
   anime: AnimeInfoFragment;
@@ -11,10 +12,11 @@ export interface CardProps {
 
 const Card: React.FC<CardProps> = ({ anime }) => {
   const title = anime.title.romaji || anime.title.english;
+  const router = useRouter();
 
   return (
-    <Link href={`/anime/${anime.id}`} passHref style={styles}>
-      <a className="w-46 transform p-2 transition duration-300 ease-out hover:scale-105 sm:w-56 anime-link" style={{ margin: '0' }}>
+    <Link href={`/anime/${anime.id}`} passHref>
+      <a className={styles.aniLink}>
         <div className={styles.aspect7}>
           <Image
             alt="Cover Image"

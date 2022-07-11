@@ -1,0 +1,15 @@
+.searchDiv {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 3px;
+    margin-left: 1.3%;
+    width: 30vw;
+    height: 4.2vh;
+}
+
+@media (max-width: 480px) {
+    .searchDiv {
+        width: 50vw;
+    }
+}
