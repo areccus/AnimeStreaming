@@ -1,0 +1,68 @@
+
+div.aspect7 {
+    position: relative; 
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    height: 50vh;
+    width: 15vw;
+}
+
+.cardIMG {
+    border-radius: 3px;
+    opacity: 85%;
+}
+
+p.category {
+    font-size: 1.6vw;
+    color: white;
+    margin: 3% 2% 1% 2%;
+}
+
+.cardTitle {
+    position: absolute;
+    bottom: 20px;
+    left: 12px;
+    overflow-wrap: normal;
+}
+
+.cardTitle p {
+    font-size: 1.3vw;
+}
+
+.aniLink {
+    transition: all .2s ease-in-out;
+    margin: 0;
+    width: 14.5vw;
+}
+
+.aniLink:hover {
+    transform: scale(1.03);
+}
+
+
+@media (max-width: 480px) {
+    div.aspect7 {
+        height: 30vh;
+        width: 30vw;
+        
+    }
+
+    p.category {
+        font-size: 4vw;
+        margin: 8% 2% 1% 4%;
+    }
+
+    .cardTitle {
+        bottom: 5px;
+        left: 9px;
+    }
+
+    .cardTitle p {
+        font-size: 2.7vw;
+    }
+
+    .aniLink {
+        margin: 0;
+        width: 28.5vw;
+    }
+
+}

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import styles from '../../styles/Home.module.css'
+import styles from '../../styles/banner.module.css'
 
 import { PlayIcon } from '@heroicons/react/solid';
 
@@ -19,6 +19,7 @@ export interface BannerProps {
 const Banner: React.FC<BannerProps> = ({ anime }) => {
   const router = useRouter();
 
+  console.log(anime)
   // finish the progress bar if the bannerimage doesn't exist
   useEffect(() => {
     if (!anime.bannerImage) progressBar.finish();
@@ -38,18 +39,19 @@ const Banner: React.FC<BannerProps> = ({ anime }) => {
         </h2>
 
         {/* Array of the genres */}
-        <div className="mr-2 flex flex-wrap gap-x-2 gap-y-1 sm:gap-x-3 md:gap-x-4">
+        <div className={styles.genreContainer}>
           {anime.genres.map((genre) => (
             <Genre key={genre} genre={genre} />
           ))}
         </div>
-
-        <p className={styles.aniDesc}>
+        <div className='descContainer'>
+        <p className={router.route === '/' ? `${styles.description}` : `${styles.aniDesc}`}>
           {stripHtml(anime.description)}
         </p>
+        </div>
 
         {/* the button at the bottom */}
-        <Link
+        {/* <Link
           href={`/${router.route === '/' ? 'anime' : 'watch'}/${anime.id}`}
           passHref
         >
@@ -59,7 +61,7 @@ const Banner: React.FC<BannerProps> = ({ anime }) => {
               {router.route === '/' ? 'Read More' : 'Watch Now'}
             </button>
           </a>
-        </Link>
+        </Link> */}
       </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import styles from '../styles/Home.module.css'
+import styles from '../styles/card.module.css'
 
 export interface GenreProps {
   genre: string;

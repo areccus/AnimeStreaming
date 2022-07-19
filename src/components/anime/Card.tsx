@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import styles from '../../styles/Home.module.css'
+import styles from '../../styles/card.module.css'
 import { AnimeInfoFragment } from '@generated/aniList';
 import { base64SolidImage } from '@utility/image';
 import { useRouter } from 'next/router';

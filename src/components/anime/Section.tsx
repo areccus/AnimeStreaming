@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 
 import AnimeCard from '@components/anime/Card';
 import { AnimeInfoFragment } from '@generated/aniList';
-import styles from '../../styles/Home.module.css'
+import styles from '../../styles/card.module.css'
 
 export interface SectionProps {
   title: string;

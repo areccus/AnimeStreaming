@@ -1,0 +1,95 @@
+div.bannerContainer {
+    width: 80vw;
+    height: 50vh;
+    margin-top: 1%;
+    border-radius: 6px;
+    position: relative;
+    background: linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+}
+
+.aniBanner {
+    border-radius: 4px;
+    height: 80vh;
+    /* border: 2px solid white; */
+}
+
+.banner_image {
+    width: 100%;
+    height: 45vh;
+    border-radius: 6px;
+}
+
+.genreContainer {
+    display: none;
+}
+
+
+.description {
+    opacity: 80%;
+    font-size: 1vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 30vw;
+    height: 8vh;
+}
+
+div.textContainer {
+    position: absolute;
+    bottom: 6vh;
+    right: 2vw;
+    color: white;
+    font-size: 0.8vw;
+    margin: 0 0 2% 1%;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+
+}
+
+.textContainer h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+}
+
+.aniText {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1%;
+    /* border: 2px solid white; */
+}
+
+.aniText h2 {
+    margin-bottom: 0.5%;
+    font-size: 1.5vw;
+}
+
+.genres {
+    opacity: 50%;
+}
+
+@media (max-width: 480px) {
+    div.bannerContainer {
+        width: 90vw;
+        height: 30vh;
+        margin-top: 5%;
+    }
+
+    div.textContainer {
+        position: absolute;
+        bottom: 20px;
+        left: 16px;
+        color: white;
+        font-size: 0.8vw;
+        margin: 0 0 2% 1%;
+    }
+    
+    .banner_image {
+        height: 29.5vh
+    }
+
+    .aniText h2 {
+        font-size: 3.5vw;
+    }
+
+    .genres {
+        font-size: 2vw;
+    }
+}
