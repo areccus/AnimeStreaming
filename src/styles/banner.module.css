@@ -4,13 +4,13 @@ div.bannerContainer {
     margin-top: 1%;
     border-radius: 6px;
     position: relative;
-    background: linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
 }
 
 .aniBanner {
     border-radius: 4px;
     height: 80vh;
     /* border: 2px solid white; */
+    margin-bottom: 4%;
 }
 
 .banner_image {
@@ -19,16 +19,9 @@ div.bannerContainer {
     border-radius: 6px;
 }
 
-.genreContainer {
-    display: none;
-}
-
-
 .description {
-    opacity: 80%;
+    opacity: 90%;
     font-size: 1vw;
-    overflow: hidden;
-    text-overflow: ellipsis;
     width: 30vw;
     height: 8vh;
 }
@@ -52,18 +45,42 @@ div.textContainer {
 .aniText {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    margin: 1%;
-    /* border: 2px solid white; */
+    margin-left: 3%;
+    height: 40vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* border: 2px solid yellow; */
+    position: absolute;
 }
 
 .aniText h2 {
-    margin-bottom: 0.5%;
+    margin-top: 2%;
     font-size: 1.5vw;
 }
 
-.genres {
-    opacity: 50%;
+.genreContainer {
+    opacity: 30%;
+    margin: 1% 0;
 }
+
+.genreContainer a {
+    margin-right: 0.5%;
+}
+
+.aniOverlay {
+    background-image: linear-gradient(90deg, rgb(23, 23, 23) 0px, rgba(32, 33, 37, 0.6) 10%, rgba(32, 33, 37, 0) 60%, rgba(32, 33, 37, 0) 80%, rgb(23, 23, 23) 100%);
+    width: 100%;
+    height: 51.5%;
+    position: absolute;
+    top: 1vh;
+}
+
+ .aniBanner h3 {
+    border-bottom: 2px solid red;
+    width: 5.8vw;
+    margin-bottom: 1%;
+}
+
 
 @media (max-width: 480px) {
     div.bannerContainer {
@@ -78,18 +95,38 @@ div.textContainer {
         left: 16px;
         color: white;
         font-size: 0.8vw;
-        margin: 0 0 2% 1%;
     }
     
     .banner_image {
-        height: 29.5vh
+        height: 39.5vh
+    }
+
+    .aniText {
+        margin-left: 5%;
     }
 
     .aniText h2 {
-        font-size: 3.5vw;
+        margin-top: 7%;
+        font-size: 4.5vw;
+        font-weight: bold;
     }
 
-    .genres {
-        font-size: 2vw;
+    .genreContainer {
+        margin: 2% 0;
+        opacity: 30%;
+    }
+
+    .genreContainer a {
+        margin-right: 1.5%;
+    }
+
+    .aniOverlay {
+        height: 49%;
+    }
+
+    .aniBanner h3 {
+        width: 23vw;
+        font-size: 4.2vw;
+        margin-bottom: 2%;
     }
 }

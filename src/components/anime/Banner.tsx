@@ -30,7 +30,7 @@ const Banner: React.FC<BannerProps> = ({ anime }) => {
       <div className={styles.innerDiv}>
       {/* The image behind the banner */}
       <img src={anime.bannerImage} alt="" className={styles.banner_image}/>
-
+      <div className={router.route === '/' ? `${styles.bannerOverlay}` : `${styles.aniOverlay}`}></div>
       {/* The container that lies on top of the image */}
       <div className={router.route === '/' ? `${styles.textContainer}` : `${styles.aniText}`}> 
         {/* the title */}
@@ -45,6 +45,7 @@ const Banner: React.FC<BannerProps> = ({ anime }) => {
           ))}
         </div>
         <div className='descContainer'>
+        <h3>SUMMARY:</h3>
         <p className={router.route === '/' ? `${styles.description}` : `${styles.aniDesc}`}>
           {stripHtml(anime.description)}
         </p>
