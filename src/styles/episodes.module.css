@@ -1,0 +1,15 @@
+.episodes {
+    width: 22vw;
+    outline: none;
+    display: flex;
+}
+
+.episodes a {
+    margin-right: 4%;
+}
+
+@media (max-width: 480px) {
+    .episodes {
+        flex-direction: column;
+    }
+}

@@ -111,14 +111,14 @@ const Anime = ({
         </p>
       )}
 
-      {recommended.length > 0 ? (
+      {/* {recommended.length > 0 ? (
         <Section animeList={recommended} title="Recommended" />
       ) : (
         <p className="mt-4 ml-3 flex items-center justify-center text-base font-semibold text-white sm:ml-6 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
           no recommendations found
           <EmojiSadIcon className="w-8" />
         </p>
-      )}
+      )} */}
     </>
   );
 };

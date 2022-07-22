@@ -45,8 +45,8 @@ div.textContainer {
 .aniText {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 3%;
-    height: 40vh;
+    margin: 0 3%;
+    height: 39.5vh;
     overflow: hidden;
     text-overflow: ellipsis;
     /* border: 2px solid yellow; */
