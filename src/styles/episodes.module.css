@@ -1,15 +1,65 @@
 .episodes {
-    width: 22vw;
     outline: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .episodes a {
     margin-right: 4%;
 }
 
+.episode {
+    transition: all .2s ease-in-out;
+    display: flex;
+}
+
+.episode:hover {
+    transform: scale(1.03);
+}
+
+.episodeDiv {
+    width: 20vw;
+    height: 20vh;
+}
+
+.episodeP {
+    color: white;
+    font-size: 1.5vw;
+}
 @media (max-width: 480px) {
     .episodes {
         flex-direction: column;
     }
+
+    .episode {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5%;
+        /* border: 2px solid red; */
+        width: 80vw;
+        height: 20vh;
+    }
+
+    .episode p {
+        margin-left: 40%;
+    }
+
+    .episodeDiv {
+        width: 35vw;
+        height: 15vh;
+    }
+
+    .episodeP {
+        font-size: 4vw;
+        margin-left: 2%;
+        width: 17vw;
+        display: flex;
+    }
+
+    .episodeP p {
+        border-bottom: 1px solid red;
+        margin-right: 12%;
+    }
+
 }

@@ -15,9 +15,15 @@ const Section: React.FC<SectionProps> = ({ anime, episodes }) => {
 
   return (
     <div style={{ marginLeft: '4%' }}>
-      <p className="mt-4 ml-3 text-base font-semibold text-white sm:ml-6 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
+      <div className={styles.episodeP}>
+      <p>
         Episodes
       </p>
+
+      {/* <p>
+        Recommendations
+      </p> */}
+      </div>
 
       <div
         tabIndex={0}

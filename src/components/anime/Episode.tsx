@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import { AnimeBannerFragment, AnimeInfoFragment } from '@generated/aniList';
 import { EpisodeInfoFragment } from '@generated/kitsu';
+import styles from '../../styles/episodes.module.css'
 
 export interface CardProps {
   anime: AnimeBannerFragment & AnimeInfoFragment;
@@ -15,9 +16,9 @@ const Card: React.FC<CardProps> = ({ anime, number, episode }) => {
 
   return (
     <Link href={`/watch/${anime.id}?episode=${number}`} passHref>
-      <a className="w-64 transform cursor-pointer p-2 transition duration-300 ease-out hover:scale-105 sm:w-80">
+      <a className={styles.episode}>
         <div className="relative">
-          <div className="aspect-w-3 aspect-h-2 relative w-64 sm:w-80">
+          <div className={styles.episodeDiv}>
             <Image
               alt="Cover Image"
               src={
@@ -32,9 +33,9 @@ const Card: React.FC<CardProps> = ({ anime, number, episode }) => {
               className="rounded-md"
             />
           </div>
-          <p className="absolute top-0 right-0 mt-2 h-12 text-xl font-bold text-white">
+          {/* <p className="absolute top-0 right-0 mt-2 h-12 text-xl font-bold text-white">
             {number}
-          </p>
+          </p> */}
         </div>
 
         <div>
