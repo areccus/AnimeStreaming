@@ -7,6 +7,8 @@ import Banner from '@components/anime/Banner';
 import EpisodeSection from '@components/anime/EpisodeSection';
 import Section from '@components/anime/Section';
 import Header from '@components/Header';
+import styles from '../../styles/episodes.module.css'
+
 import {
   AnimeBannerFragment,
   AnimeInfoFragment,
@@ -14,6 +16,10 @@ import {
 } from '@generated/aniList';
 import { EpisodesListFragment } from '@generated/kitsu';
 import { animePage, getKitsuEpisodes } from '@lib/api';
+import { url } from 'inspector';
+import anime from '@store/slices/anime';
+
+const Vibrant = require('node-vibrant');
 
 interface AnimeProps {
   anime: AnimeInfoFragment & AnimeBannerFragment;
@@ -71,8 +77,26 @@ const Anime = ({
   recommended,
   episodes,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+  function changeBackground(color) {
+    document.getElementById('background').style.background = color
+ }
+
+  const img = anime.bannerImage
+  let vibrant = Vibrant.from(img).getPalette()
+  .then((palette) => {
+    let bgColor = palette.Vibrant.rgb
+    function rgb(values) {
+      return 'rgb(' + values.join(', ') + ', 0.3)';
+  }
+    console.log(rgb(bgColor))
+    changeBackground(`${rgb(bgColor)}`);
+  })
+
+
   return (
-    <>
+    <div className={styles.background} id='background'>
+      <img className={styles.bgIMG} src={anime.bannerImage} alt="" />
+      <div className={styles.glass}></div>
       <NextSeo
         title={`${anime.title.romaji || anime.title.english} | Animeflix`}
         description={anime.description}
@@ -119,7 +143,7 @@ const Anime = ({
           <EmojiSadIcon className="w-8" />
         </p>
       )} */}
-    </>
+    </div>
   );
 };
 

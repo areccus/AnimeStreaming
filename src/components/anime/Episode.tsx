@@ -39,7 +39,7 @@ const Card: React.FC<CardProps> = ({ anime, number, episode }) => {
         </div>
 
         <div>
-          <p className="mt-2 text-sm font-bold text-white line-clamp-2">
+          <p className={styles.number}>
             {title}
           </p>
         </div>

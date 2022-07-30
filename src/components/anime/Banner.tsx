@@ -18,8 +18,6 @@ export interface BannerProps {
 
 const Banner: React.FC<BannerProps> = ({ anime }) => {
   const router = useRouter();
-
-  console.log(anime)
   // finish the progress bar if the bannerimage doesn't exist
   useEffect(() => {
     if (!anime.bannerImage) progressBar.finish();
@@ -39,7 +37,7 @@ const Banner: React.FC<BannerProps> = ({ anime }) => {
         </h2>
 
         {/* Array of the genres */}
-        <div className={styles.genreContainer}>
+        <div className={router.route === '/' ? `${styles.genreContainer}` : `${styles.aniGenre}`}>
           {anime.genres.map((genre) => (
             <Genre key={genre} genre={genre} />
           ))}

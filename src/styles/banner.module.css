@@ -17,19 +17,21 @@ div.bannerContainer {
     width: 100%;
     height: 45vh;
     border-radius: 6px;
+    opacity: 80%;
 }
 
 .description {
-    opacity: 90%;
+    /* opacity: 90%;
     font-size: 1vw;
     width: 30vw;
-    height: 8vh;
+    height: 8vh; */
+    display: none;
 }
 
 div.textContainer {
     position: absolute;
-    bottom: 6vh;
-    right: 2vw;
+    bottom: 10vh;
+    left: 3vw;
     color: white;
     font-size: 0.8vw;
     margin: 0 0 2% 1%;
@@ -40,6 +42,10 @@ div.textContainer {
 .textContainer h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3vw;
+}
+
+.textContainer h3 {
+    display: none;
 }
 
 .aniText {
@@ -59,20 +65,23 @@ div.textContainer {
 }
 
 .genreContainer {
+    display: none;
+}
+.aniGenre {
     opacity: 30%;
     margin: 1% 0;
 }
 
-.genreContainer a {
+.aniGenre a {
     margin-right: 0.5%;
 }
 
 .aniOverlay {
     background-image: linear-gradient(90deg, rgb(23, 23, 23) 0px, rgba(32, 33, 37, 0.6) 10%, rgba(32, 33, 37, 0) 60%, rgba(32, 33, 37, 0) 80%, rgb(23, 23, 23) 100%);
     width: 100%;
-    height: 51.5%;
+    height: 46.5%;
     position: absolute;
-    top: 1vh;
+    top: 7vh;
 }
 
  .aniBanner h3 {
@@ -84,11 +93,14 @@ div.textContainer {
 
 @media (max-width: 480px) {
     div.bannerContainer {
-        width: 90vw;
-        height: 30vh;
+        width: 80vw;
+        height: 25vh;
         margin-top: 5%;
     }
 
+    .aniBanner {
+        margin-bottom: 0;
+    }
     div.textContainer {
         position: absolute;
         bottom: 20px;
@@ -98,7 +110,7 @@ div.textContainer {
     }
     
     .banner_image {
-        height: 39.5vh
+        height: 25vh
     }
 
     .aniText {
@@ -111,17 +123,18 @@ div.textContainer {
         font-weight: bold;
     }
 
-    .genreContainer {
+    .aniGenre {
         margin: 2% 0;
-        opacity: 30%;
+        opacity: 50%;
     }
 
-    .genreContainer a {
+    .aniGenre a {
         margin-right: 1.5%;
     }
 
     .aniOverlay {
-        height: 49%;
+        height: 28.2%;
+        top: 6%
     }
 
     .aniBanner h3 {

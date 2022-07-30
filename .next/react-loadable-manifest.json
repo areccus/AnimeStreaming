@@ -1,14 +1,1 @@
-{
-  "../../node_modules/@stencil/core/internal/client/index.js -> ./shadow-css.js": {
-    "id": "../../node_modules/@stencil/core/internal/client/index.js -> ./shadow-css.js",
-    "files": [
-      "static/chunks/node_modules_stencil_core_internal_client_shadow-css_js.js"
-    ]
-  },
-  "watch/[id].tsx -> @components/watch/VideoPlayer": {
-    "id": "watch/[id].tsx -> @components/watch/VideoPlayer",
-    "files": [
-      "static/chunks/src_components_watch_VideoPlayer_tsx.js"
-    ]
-  }
-}
+{}
