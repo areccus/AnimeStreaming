@@ -93,7 +93,7 @@ div.textContainer {
 
 @media (max-width: 480px) {
     div.bannerContainer {
-        width: 80vw;
+        width: 85vw;
         height: 25vh;
         margin-top: 5%;
     }

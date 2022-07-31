@@ -17,6 +17,11 @@ const Header: React.FC<{}> = () => {
 
   return (
     <header className="sticky top-0 z-[51] flex h-12 w-full items-center bg-gray-900 shadow-md" style={{ background: 'transparent', display: 'flex', alignItems: 'center', padding: '2% 0'}}>
+      <Link href="/" passHref>
+        <a>
+          <AnimeflixIcon className="ml-4 h-7 w-7 cursor-pointer sm:ml-6" />
+        </a>
+      </Link>
       <div className={styles.searchDiv}>
         <SearchIcon className="h-4 w-7" />
         <input
