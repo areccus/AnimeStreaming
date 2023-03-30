@@ -21,8 +21,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
-        title="Animeflix - Watch animes without ads"
-        description="Watch anime shows, tv, movies for free without ads on your mobile, tablet, or pc"
+        title="AnimeStreaming"
+        description="Watch anime online for free."
         additionalMetaTags={[
           {
             name: 'keywords',
@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           cardType: 'summary_large_image',
         }}
         openGraph={{
-          site_name: 'Animeflix',
+          site_name: 'AnimeStreaming',
           images: [
             {
               url: '/preview.png',
